@@ -10,10 +10,10 @@
         ],
         "displayName": "zaim-pebble",
         "enableMultiJS": true,
-        "messageKeys": {
-            "0": 0,
-            "1": 1
-        },
+        "messageKeys": [
+            "Budget",
+            "CategoryId"
+        ],
         "projectType": "native",
         "resources": {
             "media": [

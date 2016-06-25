@@ -23,8 +23,11 @@ Pebble.addEventListener('appmessage',
   }                     
 );
 
+
+// for configration 
+
 Pebble.addEventListener('showConfiguration', function(e) {
-  var url = 'http://x.SetPebble.com/BPH9/' + Pebble.getAccountToken();
+  var url = 'http://lighty.heteml.jp/zaim';
   console.log("url :"+url);
   Pebble.openURL(url);
 });
@@ -33,9 +36,11 @@ Pebble.addEventListener('webviewclosed', function(arg) {
   if ((typeof(arg.response) == 'string') && (arg.response.length > 0)){
     // Pebble.sendAppMessage(JSON.parse(arg.response));
     // console.log(JSON.parse(arg.response));
-    console.log(JSON.parse(decodeURIComponent(arg.response)));
+    // console.log(JSON.parse(decodeURIComponent(arg.response)));
+    console.log(decodeURIComponent(arg.response));
   }
 });
+
 
 var xhrRequest = function (url, type, callback) {
   var xhr = new XMLHttpRequest();
