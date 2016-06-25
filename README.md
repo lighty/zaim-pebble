@@ -1,0 +1,2 @@
+# zaim-pebble
+show money
